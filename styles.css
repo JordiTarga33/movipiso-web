@@ -190,55 +190,183 @@ body.modal-open{overflow:hidden}
   background:none !important;
 }
 
-.hero-photo-stack{
+.hero-photo-desktop-single,
+.hero-photo-mobile-single{
   position:absolute;
   inset:0;
-  display:grid;
-  grid-template-rows:repeat(4,1fr);
   width:100%;
   height:100%;
+  object-fit:cover;
+  object-position:center center;
 }
 
-.hero-photo-stack img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:fill;
-  border:0;
-  margin:0;
-  padding:0;
-}
-
-.hero-photo-mobile{
-  display:none;
-}
+.hero-photo-mobile-single{display:none}
 
 .hero-shade{
   background:linear-gradient(
     90deg,
     rgba(255,255,255,.98) 0%,
-    rgba(255,255,255,.94) 27%,
-    rgba(255,255,255,.67) 40%,
-    rgba(255,255,255,.16) 54%,
-    rgba(255,255,255,0) 69%
+    rgba(255,255,255,.95) 27%,
+    rgba(255,255,255,.70) 40%,
+    rgba(255,255,255,.16) 55%,
+    rgba(255,255,255,0) 70%
   ) !important;
 }
 
 .hero-copy{
   width:52% !important;
-  padding-bottom:56px !important;
+  padding-bottom:58px !important;
 }
 
-.hero-ctas{
-  max-width:535px !important;
+.hero-ctas{max-width:535px !important}
+
+/* Clickable calculator card */
+.calc-launcher{
+  position:absolute;
+  z-index:4;
+  right:38px;
+  bottom:32px;
+  width:430px;
+  min-height:230px;
+  padding:24px 22px 22px 26px;
+  border:1px solid rgba(11,43,82,.10);
+  border-radius:24px;
+  background:
+    radial-gradient(circle at 82% 30%,rgba(47,128,255,.12),transparent 33%),
+    linear-gradient(145deg,rgba(255,255,255,.98),rgba(246,250,255,.97));
+  box-shadow:0 24px 54px rgba(7,27,52,.20);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-align:left;
+  color:#071b34;
+  overflow:hidden;
+  cursor:pointer;
 }
 
-.calc-teaser{
-  right:38px !important;
-  bottom:32px !important;
-  width:390px !important;
+.calc-launcher:hover{
+  transform:translateY(-2px);
+  box-shadow:0 28px 62px rgba(7,27,52,.24);
 }
 
+.calc-launcher-copy{
+  position:relative;
+  z-index:2;
+  flex:1 1 58%;
+  min-width:0;
+}
+
+.calc-launcher-kicker{
+  display:inline-flex;
+  align-items:center;
+  margin-bottom:12px;
+  padding:7px 11px;
+  border-radius:999px;
+  background:#edf4ff;
+  color:#254c7f;
+  font-size:11px;
+  font-weight:800;
+}
+
+.calc-launcher strong{
+  display:block;
+  font-size:31px;
+  line-height:.98;
+  letter-spacing:-.045em;
+  font-style:normal;
+  font-weight:950;
+}
+
+.calc-launcher strong em{
+  display:block;
+  color:#2f80ff;
+  font-style:normal;
+}
+
+.calc-launcher small{
+  display:block;
+  margin-top:10px;
+  color:#687a91;
+  font-size:13px;
+  line-height:1.3;
+}
+
+.calc-launcher-cta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  width:100%;
+  margin-top:18px;
+  min-height:44px;
+  padding:0 16px;
+  border-radius:999px;
+  background:linear-gradient(180deg,#e6fb3f,#d5f126);
+  color:#0b2038;
+  font-size:13px;
+  font-weight:900;
+}
+
+.calc-launcher>img{
+  flex:0 0 155px;
+  width:155px;
+  height:auto;
+  object-fit:contain;
+  transform:rotate(2deg);
+  filter:drop-shadow(0 16px 16px rgba(8,30,58,.16));
+}
+
+/* Premium trust strip using the exact user-provided icons */
+.trust-strip{
+  width:min(1120px,calc(100% - 48px)) !important;
+  margin:18px auto 0 !important;
+  padding:18px 20px !important;
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:10px !important;
+  background:rgba(255,255,255,.94) !important;
+  border:1px solid #e5ecf5 !important;
+  border-radius:24px !important;
+  box-shadow:0 12px 34px rgba(12,43,82,.07) !important;
+}
+
+.trust-strip .trust-item{
+  min-width:0;
+  min-height:104px;
+  padding:12px 12px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center;
+  gap:13px !important;
+  border-right:1px solid #e7edf5 !important;
+  border-bottom:0 !important;
+}
+
+.trust-strip .trust-item:last-child{border-right:0 !important}
+
+.trust-strip .trust-item img{
+  flex:0 0 62px;
+  width:62px;
+  height:62px;
+  object-fit:contain;
+  border:0;
+  filter:drop-shadow(0 8px 10px rgba(31,91,165,.10));
+}
+
+.trust-strip .trust-item p{
+  margin:0 !important;
+  color:#53677f !important;
+  font-size:12.5px !important;
+  line-height:1.35 !important;
+}
+
+.trust-strip .trust-item strong{
+  color:#0d2b4e !important;
+  font-size:14px;
+  font-weight:900;
+}
+
+/* B2B stays lower, outside the consumer hero */
 .b2b-band{
   width:min(1120px,calc(100% - 48px));
   margin:30px auto 0;
@@ -252,88 +380,86 @@ body.modal-open{overflow:hidden}
   color:#fff;
   box-shadow:0 18px 38px rgba(7,27,52,.12);
 }
-
-.b2b-band span{
-  display:block;
-  margin-bottom:7px;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:.08em;
-  color:#7fb8ff;
-}
-
-.b2b-band strong{
-  display:block;
-  font-size:21px;
-  line-height:1.2;
-}
-
-.b2b-band p{
-  margin:7px 0 0;
-  max-width:650px;
-  color:#dbe9f7;
-  font-size:13px;
-  line-height:1.5;
-}
-
-.btn-business{
-  flex:0 0 auto;
-  min-height:50px;
-  padding:0 24px;
-  border:1px solid rgba(255,255,255,.20);
-  background:linear-gradient(135deg,#2f80ff,#155fc9);
-  color:#fff;
-  box-shadow:0 10px 22px rgba(0,0,0,.16);
-}
+.b2b-band span{display:block;margin-bottom:7px;font-size:11px;font-weight:900;letter-spacing:.08em;color:#7fb8ff}
+.b2b-band strong{display:block;font-size:21px;line-height:1.2}
+.b2b-band p{margin:7px 0 0;max-width:650px;color:#dbe9f7;font-size:13px;line-height:1.5}
+.btn-business{flex:0 0 auto;min-height:50px;padding:0 24px;border:1px solid rgba(255,255,255,.20);background:linear-gradient(135deg,#2f80ff,#155fc9);color:#fff;box-shadow:0 10px 22px rgba(0,0,0,.16)}
 
 @media (max-width:1050px){
   .hero-copy{width:58% !important}
-  .calc-teaser{right:24px !important;width:340px !important}
+  .calc-launcher{right:24px;width:365px}
+  .calc-launcher>img{width:128px;flex-basis:128px}
 }
 
 @media (max-width:760px){
-  .hero{
-    min-height:980px !important;
-  }
+  .hero{min-height:930px !important}
 
-  .hero-photo-desktop{
-    display:none !important;
-  }
-
-  .hero-photo-mobile{
-    display:grid !important;
+  .hero-photo-desktop-single{display:none !important}
+  .hero-photo-mobile-single{
+    display:block !important;
+    object-fit:cover !important;
+    object-position:center 46% !important;
   }
 
   .hero-shade{
     background:linear-gradient(
       180deg,
-      rgba(5,20,37,.38) 0%,
-      rgba(5,20,37,.34) 32%,
-      rgba(5,20,37,.47) 66%,
-      rgba(5,20,37,.68) 100%
+      rgba(4,22,40,.22) 0%,
+      rgba(4,22,40,.34) 31%,
+      rgba(4,22,40,.55) 66%,
+      rgba(4,22,40,.76) 100%
     ) !important;
   }
 
   .hero-copy{
     width:100% !important;
-    padding:52px 20px 330px !important;
+    padding:50px 20px 300px !important;
   }
 
-  .hero-ctas{
-    width:100% !important;
-    max-width:none !important;
+  .hero-ctas{width:100% !important;max-width:none !important}
+  .hero-ctas .btn{width:100% !important}
+
+  .calc-launcher{
+    left:16px;
+    right:16px;
+    bottom:18px;
+    width:auto;
+    min-height:208px;
+    padding:19px 16px 17px 18px;
+    border-radius:20px;
   }
 
-  .hero-ctas .btn{
-    width:100% !important;
+  .calc-launcher strong{font-size:26px}
+  .calc-launcher>img{width:116px;flex-basis:116px}
+  .calc-launcher-kicker{font-size:10px;margin-bottom:9px}
+  .calc-launcher small{font-size:11px}
+  .calc-launcher-cta{margin-top:13px;min-height:40px}
+
+  .trust-strip{
+    width:calc(100% - 24px) !important;
+    grid-template-columns:1fr 1fr !important;
+    padding:10px !important;
+    gap:8px !important;
   }
 
-  .calc-teaser{
-    left:16px !important;
-    right:16px !important;
-    bottom:18px !important;
-    width:auto !important;
+  .trust-strip .trust-item{
+    min-height:116px;
+    padding:13px 8px !important;
+    flex-direction:column;
+    text-align:center;
+    gap:7px !important;
+    border:1px solid #edf1f6 !important;
+    border-radius:16px;
   }
+
+  .trust-strip .trust-item img{
+    width:58px;
+    height:58px;
+    flex-basis:58px;
+  }
+
+  .trust-strip .trust-item p{font-size:11px !important}
+  .trust-strip .trust-item strong{font-size:12.5px}
 
   .b2b-band{
     width:calc(100% - 24px);
@@ -341,9 +467,5 @@ body.modal-open{overflow:hidden}
     padding:23px 18px;
     display:block;
   }
-
-  .b2b-band .btn{
-    width:100%;
-    margin-top:18px;
-  }
+  .b2b-band .btn{width:100%;margin-top:18px}
 }
