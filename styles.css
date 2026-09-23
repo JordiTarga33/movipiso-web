@@ -321,3 +321,20 @@ body.modal-open{overflow:hidden}
     margin-top:18px;
   }
 }
+
+
+/* FINAL HERO FRAMING - preserve the complete mobile composition */
+@media (max-width:760px){
+  .hero{
+    min-height:980px !important;
+  }
+  .hero-photo{
+    background-image:url("./assets/hero-mobile.webp?v=20260923-6") !important;
+    background-size:cover !important;
+    background-position:center center !important;
+    background-repeat:no-repeat !important;
+  }
+  .hero-copy{
+    padding-bottom:350px !important;
+  }
+}
