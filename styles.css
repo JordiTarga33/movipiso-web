@@ -338,3 +338,73 @@ body.modal-open{overflow:hidden}
     padding-bottom:350px !important;
   }
 }
+
+
+/* FINAL HERO IMAGE LOCK - approved user images */
+.hero-photo{
+  inset:0 !important;
+  background-image:url("./assets/hero-desktop.webp?v=finalhero") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+
+.hero-shade{
+  background:linear-gradient(
+    90deg,
+    rgba(255,255,255,.98) 0%,
+    rgba(255,255,255,.94) 29%,
+    rgba(255,255,255,.64) 42%,
+    rgba(255,255,255,.10) 56%,
+    rgba(255,255,255,0) 70%
+  ) !important;
+}
+
+.hero-ctas{
+  max-width:610px !important;
+}
+
+@media (max-width:760px){
+  .hero{
+    min-height:980px !important;
+  }
+
+  .hero-photo{
+    inset:0 !important;
+    background-image:url("./assets/hero-mobile.webp?v=finalhero") !important;
+    background-size:cover !important;
+    background-position:center 45% !important;
+    background-repeat:no-repeat !important;
+  }
+
+  .hero-shade{
+    background:linear-gradient(
+      180deg,
+      rgba(5,20,37,.16) 0%,
+      rgba(5,20,37,.28) 27%,
+      rgba(5,20,37,.50) 58%,
+      rgba(5,20,37,.76) 100%
+    ) !important;
+  }
+
+  .hero-copy{
+    width:100% !important;
+    padding:52px 20px 330px !important;
+  }
+
+  .hero-ctas{
+    width:100% !important;
+    max-width:none !important;
+  }
+
+  .hero-ctas .btn{
+    width:100% !important;
+  }
+
+  .calc-teaser{
+    left:16px !important;
+    right:16px !important;
+    bottom:18px !important;
+    width:auto !important;
+  }
+}
