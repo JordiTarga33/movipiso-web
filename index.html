@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movipiso | Mudanzas claras desde el primer minuto</title>
+  <meta name="description" content="Mudanzas, mini mudanzas, portes y vaciados en Barcelona y provincia. Calcula una primera estimación y envíanos fotos o vídeo para afinar el presupuesto." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#" aria-label="Movipiso, inicio">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-word">MOVI<span>PISO</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#mudanzas">Mudanzas</a>
+      <a href="#portes">Portes</a>
+      <a href="#vaciados">Vaciados</a>
+      <a href="#precios">Precios</a>
+      <a href="#empresas">Empresas</a>
+      <a href="#zonas">Zonas <span aria-hidden="true">⌄</span></a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="header-contact" type="button" data-contact-placeholder aria-label="WhatsApp, número pendiente">
+        <span aria-hidden="true">◉</span>
+        <span>WhatsApp</span>
+      </button>
+      <button class="btn btn-accent btn-small" type="button" data-open-calculator>
+        Calcular mudanza <span aria-hidden="true">→</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu hidden>
+    <a href="#mudanzas">Mudanzas</a>
+    <a href="#portes">Portes</a>
+    <a href="#vaciados">Vaciados</a>
+    <a href="#precios">Precios</a>
+    <a href="#empresas">Empresas</a>
+    <a href="#zonas">Zonas</a>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-photo" role="img" aria-label="Servicio de mudanza con furgón y mobiliario"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">MUDANZAS · PORTES · VACIADOS · BARCELONA Y PROVINCIA</p>
+        <h1 id="hero-title">Mudanzas claras desde el <span>primer minuto.</span></h1>
+        <p class="hero-lead">
+          Cuéntanos qué necesitas mover, de dónde a dónde y cuándo.
+          Calcula una primera estimación o envíanos fotos o vídeo para preparar tu presupuesto.
+        </p>
+
+        <div class="hero-ctas">
+          <button class="btn btn-accent" type="button" data-open-calculator>
+            Calcular mi mudanza <span aria-hidden="true">→</span>
+          </button>
+          <button class="btn btn-whatsapp" type="button" data-contact-placeholder>
+            <span class="wa-dot" aria-hidden="true">●</span>
+            Enviar fotos por WhatsApp
+          </button>
+        </div>
+
+        <div class="service-pills" aria-label="Servicios principales">
+          <span>▣ Mudanzas</span>
+          <span>◇ Mini mudanzas</span>
+          <span>▱ Portes</span>
+          <span>♜ Vaciados</span>
+        </div>
+
+        <a class="b2b-link" href="#empresas">¿Gestionas inmuebles? Conoce nuestra solución para empresas <span aria-hidden="true">→</span></a>
+      </div>
+
+      <aside class="calc-teaser" aria-label="Calculadora de mudanza">
+        <div class="calc-teaser-head">
+          <strong>Calculadora de mudanza</strong>
+          <span><i></i> Demo inmediata</span>
+        </div>
+
+        <div class="lcd">
+          <div class="lcd-row">
+            <span>ORIGEN</span>
+            <strong>Barcelona</strong>
+          </div>
+          <div class="lcd-row">
+            <span>DESTINO</span>
+            <strong>¿A dónde vamos?</strong>
+          </div>
+        </div>
+
+        <div class="calc-keys" aria-hidden="true">
+          <span>−</span><span>+</span><span class="key-c">C</span>
+        </div>
+
+        <button class="btn btn-accent calc-start" type="button" data-open-calculator>
+          Empezar cálculo <span aria-hidden="true">→</span>
+        </button>
+        <small>Estimación de maqueta · no es un presupuesto definitivo</small>
+      </aside>
+    </section>
+
+    <section class="trust-strip" aria-label="Compromisos Movipiso">
+      <div><span aria-hidden="true">✓</span><p><strong>Trato directo</strong><br>y cercano</p></div>
+      <div><span aria-hidden="true">◎</span><p><strong>Presupuesto claro</strong><br>al revisar los datos</p></div>
+      <div><span aria-hidden="true">⌖</span><p><strong>Barcelona</strong><br>y provincia</p></div>
+      <div><span aria-hidden="true">↗</span><p><strong>Seguimiento</strong><br>de principio a fin</p></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" data-modal-backdrop hidden></div>
+
+  <section class="calculator-modal" role="dialog" aria-modal="true" aria-labelledby="calculator-title" data-calculator hidden>
+    <div class="calculator-shell">
+      <div class="calculator-topbar">
+        <div>
+          <p class="calculator-kicker">MOVIPISO · ESTIMADOR</p>
+          <h2 id="calculator-title">Calcula tu mudanza</h2>
+        </div>
+        <button class="modal-close" type="button" aria-label="Cerrar calculadora" data-close-calculator>×</button>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span data-step-label>Paso 1 de 5</span>
+          <span data-step-name>Ruta</span>
+        </div>
+        <div class="progress-track"><span data-progress></span></div>
+      </div>
+
+      <form id="move-calculator" novalidate>
+        <fieldset class="step is-active" data-step="1">
+          <legend>¿De dónde a dónde nos vamos?</legend>
+          <p class="step-intro">No necesitamos la dirección exacta todavía. Ciudad o barrio es suficiente para esta primera estimación.</p>
+
+          <label>
+            Origen
+            <input type="text" name="origin" placeholder="Ej. Barcelona · Eixample" autocomplete="address-level2" required />
+          </label>
+
+          <label>
+            Destino
+            <input type="text" name="destination" placeholder="Ej. Badalona · Centre" autocomplete="address-level2" required />
+          </label>
+
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="route" value="same" checked><span>Misma ciudad</span></label>
+            <label class="choice"><input type="radio" name="route" value="metro"><span>Área metropolitana</span></label>
+            <label class="choice"><input type="radio" name="route" value="province"><span>Resto provincia</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="2">
+          <legend>Accesos en origen y destino</legend>
+          <p class="step-intro">Las plantas y el ascensor pueden cambiar mucho el tiempo de trabajo.</p>
+
+          <div class="access-grid">
+            <div class="access-card">
+              <h3>Origen</h3>
+              <label>Planta
+                <select name="originFloor">
+                  <option value="0">Bajo / casa</option>
+                  <option value="1">1ª</option><option value="2">2ª</option><option value="3">3ª</option>
+                  <option value="4">4ª</option><option value="5">5ª o más</option>
+                </select>
+              </label>
+              <label class="toggle-row"><input type="checkbox" name="originLift" checked><span>Hay ascensor</span></label>
+            </div>
+
+            <div class="access-card">
+              <h3>Destino</h3>
+              <label>Planta
+                <select name="destinationFloor">
+                  <option value="0">Bajo / casa</option>
+                  <option value="1">1ª</option><option value="2">2ª</option><option value="3">3ª</option>
+                  <option value="4">4ª</option><option value="5">5ª o más</option>
+                </select>
+              </label>
+              <label class="toggle-row"><input type="checkbox" name="destinationLift" checked><span>Hay ascensor</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="3">
+          <legend>¿Cuánto tenemos que mover?</legend>
+          <p class="step-intro">Una aproximación basta. Después las fotos o el vídeo nos permitirán afinar.</p>
+
+          <div class="choice-grid room-grid">
+            <label class="choice"><input type="radio" name="rooms" value="0.5"><span>Estudio</span></label>
+            <label class="choice"><input type="radio" name="rooms" value="1" checked><span>1 habitación</span></label>
+            <label class="choice"><input type="radio" name="rooms" value="2"><span>2 habitaciones</span></label>
+            <label class="choice"><input type="radio" name="rooms" value="3"><span>3 habitaciones</span></label>
+            <label class="choice"><input type="radio" name="rooms" value="4"><span>4+ habitaciones</span></label>
+            <label class="choice"><input type="radio" name="rooms" value="0.25"><span>Solo algunos muebles</span></label>
+          </div>
+
+          <label>
+            Cajas aproximadas
+            <select name="boxes">
+              <option value="0">0–10 cajas</option>
+              <option value="1">11–25 cajas</option>
+              <option value="2">26–50 cajas</option>
+              <option value="3">Más de 50</option>
+            </select>
+          </label>
+
+          <div class="specials">
+            <span class="field-label">¿Hay algo especial?</span>
+            <label class="toggle-row"><input type="checkbox" name="special" value="sofa"><span>Sofá grande / chaise longue</span></label>
+            <label class="toggle-row"><input type="checkbox" name="special" value="appliance"><span>Electrodoméstico pesado</span></label>
+            <label class="toggle-row"><input type="checkbox" name="special" value="delicate"><span>Pieza delicada o especialmente voluminosa</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="4">
+          <legend>Fecha y ayuda que necesitas</legend>
+          <p class="step-intro">Selecciona lo que crees que vas a necesitar. Después lo confirmaremos contigo.</p>
+
+          <label>
+            Fecha aproximada
+            <input type="date" name="date" />
+          </label>
+
+          <div class="specials">
+            <label class="toggle-row"><input type="checkbox" name="service" value="packing"><span>Embalaje de cajas</span></label>
+            <label class="toggle-row"><input type="checkbox" name="service" value="assembly"><span>Desmontaje y montaje</span></label>
+            <label class="toggle-row"><input type="checkbox" name="service" value="removal"><span>Retirada de muebles</span></label>
+            <label class="toggle-row"><input type="checkbox" name="service" value="difficult"><span>Acceso complicado / escalera estrecha</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="5">
+          <legend>¿Quieres que podamos enviarte la estimación?</legend>
+          <p class="step-intro">Es opcional. Puedes ver el resultado ahora mismo sin dejar tus datos.</p>
+
+          <label>
+            Teléfono
+            <input type="tel" name="phone" placeholder="Opcional" autocomplete="tel" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Opcional" autocomplete="email" />
+          </label>
+
+          <div class="demo-note">
+            <strong>Demo de construcción:</strong> en esta versión no se envía ni almacena ningún dato.
+          </div>
+        </fieldset>
+
+        <section class="step result-step" data-step="result" aria-live="polite">
+          <div class="result-badge">SIMULACIÓN DE MAQUETA</div>
+          <p class="result-kicker">Estimación inicial</p>
+          <div class="result-price"><span data-result-min>—</span>–<span data-result-max>—</span> €</div>
+          <p class="result-copy">Este importe es ficticio y sirve únicamente para validar la experiencia de la calculadora. No es una tarifa de Movipiso.</p>
+
+          <div class="result-summary" data-result-summary></div>
+
+          <div class="result-next">
+            <strong>Siguiente paso real</strong>
+            <p>Envíanos fotos o un vídeo del volumen y los accesos para convertir la orientación en un presupuesto revisado.</p>
+          </div>
+
+          <button class="btn btn-whatsapp btn-full" type="button" data-contact-placeholder>
+            Enviar fotos por WhatsApp
+          </button>
+        </section>
+
+        <div class="calculator-actions" data-calculator-actions>
+          <button class="btn btn-ghost" type="button" data-prev disabled>← Atrás</button>
+          <button class="btn btn-accent" type="button" data-next>Siguiente →</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
