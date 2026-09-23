@@ -295,3 +295,50 @@ body.modal-open{overflow:hidden}
     width:auto !important;
   }
 }
+
+
+/* MOBILE HERO REFINEMENT - image framing + B2B CTA */
+.btn-business{
+  background:linear-gradient(135deg,#2f80ff 0%,#155fc9 100%) !important;
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.20) !important;
+  box-shadow:0 12px 26px rgba(21,95,201,.24) !important;
+}
+
+.btn-business:hover{
+  background:linear-gradient(135deg,#3b8cff 0%,#0f56bd 100%) !important;
+}
+
+@media (max-width:760px){
+  .hero{
+    min-height:960px !important;
+  }
+
+  .hero-photo{
+    background-size:auto 135% !important;
+    background-position:center 48% !important;
+  }
+
+  .hero-shade{
+    background:linear-gradient(
+      180deg,
+      rgba(5,25,45,.42) 0%,
+      rgba(5,25,45,.34) 34%,
+      rgba(5,25,45,.43) 66%,
+      rgba(5,25,45,.64) 100%
+    ) !important;
+  }
+
+  .hero h1,
+  .hero-lead,
+  .eyebrow{
+    text-shadow:0 2px 12px rgba(0,0,0,.20);
+  }
+
+  .btn-business{
+    min-height:58px !important;
+    padding:0 22px !important;
+    border-color:rgba(142,194,255,.75) !important;
+    box-shadow:0 12px 28px rgba(13,72,150,.32) !important;
+  }
+}
