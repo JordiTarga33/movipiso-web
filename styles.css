@@ -39,6 +39,8 @@ a{color:inherit}
 .btn-accent:hover{box-shadow:0 12px 24px rgba(207,235,23,.28)}
 .btn-small{min-height:44px;padding:0 20px;font-size:14px}
 .btn-whatsapp{border:1.5px solid var(--wa);background:#fff;color:var(--navy)}
+.btn-business{flex:0 0 100%;max-width:535px;min-height:56px;background:var(--navy);color:#fff;border:1px solid var(--navy);box-shadow:0 10px 24px rgba(7,27,52,.14)}
+.btn-business:hover{background:#0c2a4d;box-shadow:0 12px 28px rgba(7,27,52,.2)}
 .wa-dot{color:var(--wa)}
 .btn-ghost{border:1px solid var(--line);background:#fff;color:var(--ink);box-shadow:none}
 .btn-full{width:100%}
@@ -55,9 +57,7 @@ a{color:inherit}
 .hero h1{max-width:650px;margin:0;font-size:clamp(50px,5.1vw,78px);line-height:.98;letter-spacing:-.055em;font-weight:950;color:#071a34}
 .hero h1 span{color:var(--blue)}
 .hero-lead{max-width:590px;margin:26px 0 0;font-size:18px;line-height:1.5;color:#263d5b}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.service-pills{display:flex;flex-wrap:wrap;gap:24px;margin-top:52px;font-size:13px;font-weight:750;color:#1b3455}
-.b2b-link{display:inline-block;margin-top:30px;color:#176dde;font-size:14px;font-weight:760;text-underline-offset:4px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;max-width:535px}
 .calc-teaser{position:absolute;z-index:4;right:54px;bottom:52px;width:390px;padding:18px;border-radius:20px;background:linear-gradient(180deg,#f5f7f2,#e7ece8);border:1px solid rgba(7,27,52,.12);box-shadow:0 24px 50px rgba(7,27,52,.22)}
 .calc-teaser-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
 .calc-teaser-head strong{font-size:17px}
@@ -152,8 +152,6 @@ body.modal-open{overflow:hidden}
   .hero-ctas{display:grid;grid-template-columns:1fr;margin-top:22px}
   .hero-ctas .btn{width:100%}
   .btn-whatsapp{background:rgba(6,23,42,.52);color:#fff}
-  .service-pills{gap:10px 18px;margin-top:26px;color:#fff;font-size:11px}
-  .b2b-link{margin-top:24px;color:#8bc2ff;font-size:13px}
   .calc-teaser{right:16px;left:16px;bottom:20px;width:auto;padding:15px;border-radius:18px}
   .calc-teaser-head strong{font-size:15px}
   .lcd{padding:10px 12px}
