@@ -170,3 +170,7 @@
 .coverage-marker{background:transparent!important;border:0!important}.coverage-marker span{display:block;width:18px;height:18px;border-radius:50%;border:3px solid #fff;box-shadow:0 5px 13px rgba(0,0,0,.28)}
 .leaflet-tooltip{font-family:Inter,system-ui,sans-serif;font-weight:800;border:0!important;border-radius:9px!important;box-shadow:0 8px 20px rgba(7,31,63,.15)!important}
 @media(max-width:640px){#coverage-map{height:430px;border-radius:22px}.coverage-map-section{padding:62px 0}.coverage-legend{position:static;margin-top:10px;background:#0a284d}}
+
+.local-source-note{margin-top:16px;padding-top:13px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+.local-source-note a{color:#4776a8;text-decoration:none;font-weight:700}
+.local-source-note a:hover{text-decoration:underline}
