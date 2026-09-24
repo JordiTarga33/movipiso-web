@@ -59,3 +59,22 @@ carpinteria:["Ajustar antes de sustituir","Puertas, bisagras, herrajes y pequeñ
 "limpieza-diogenes":["Valoración humana y técnica","No automatizamos un precio en situaciones de acumulación extrema o posible riesgo biológico.",["Seguridad","EPIs","Volumen","Protocolo"]],
 "hoteles-b2b":["Trabajar sin bloquear la operación","En hoteles importan fases, horarios, ascensores de servicio y habitaciones.",["Fases","Horarios","Volumen","Continuidad"]]
 };const cfg=map[slug],faq=document.querySelector(".faq-list");if(!cfg||!faq||document.querySelector(".service-depth-v3"))return;const sec=document.createElement("section");sec.className="service-depth-v3";sec.innerHTML='<div class="shell depth-grid-v3"><div class="depth-copy-v3 reveal-v3"><p class="kicker">ALCANCE CLARO</p><h2>'+cfg[0]+'</h2><p>'+cfg[1]+'</p><a class="btn btn-blue" href="'+u("contacto/")+'">Pedir valoración →</a></div><div class="depth-list-v3">'+cfg[2].map((x,i)=>'<div class="depth-item-v3 reveal-v3"><span>0'+(i+1)+'</span><strong>'+x+'</strong><small>Se valida antes de cerrar el trabajo.</small></div>').join("")+'</div></div>';faq.closest(".section").before(sec)})();
+
+/* ARTICLE FAQ V5 · mantiene el contenido en HTML y lo convierte visualmente en desplegable */
+(()=>{document.querySelectorAll(".article-content h2#faq").forEach(head=>{
+ if(head.nextElementSibling?.classList?.contains("article-faq-list"))return;
+ const box=document.createElement("div");box.className="article-faq-list faq-list";
+ let node=head.nextElementSibling;
+ while(node&&node.tagName!=="H2"){
+   const next=node.nextElementSibling;
+   if(node.tagName==="H3"){
+     const p=next&&next.tagName==="P"?next:null;
+     const d=document.createElement("details"),s=document.createElement("summary");
+     s.innerHTML=node.innerHTML;d.append(s);
+     if(p){d.append(p);node.remove();node=p.nextElementSibling}else{node.remove();node=next}
+     box.append(d);continue;
+   }
+   node=next;
+ }
+ head.insertAdjacentElement("afterend",box);
+});})();
