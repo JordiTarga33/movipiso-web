@@ -34,3 +34,9 @@
  .seo-links-v5{display:grid;grid-template-columns:1fr 1fr}
  .seo-links-v5 a{text-align:center}
 }
+
+/* ARTICLE FAQ V5 */
+.article-faq-list{margin:18px 0 34px;border-top:1px solid var(--line)}
+.article-faq-list details{background:#fff}
+.article-faq-list summary{font-size:16px}
+.article-faq-list p{margin:-4px 0 20px;color:var(--muted);font-size:14px;line-height:1.65}
