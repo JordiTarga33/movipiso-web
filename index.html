@@ -8,6 +8,7 @@
   <meta name="robots" content="noindex,nofollow" />
   <link rel="stylesheet" href="./styles.css?v=20260923-hero2" />
   <link rel="stylesheet" href="./approved-home.css?v=20260923-approved1" />
+  <link rel="stylesheet" href="./home-v2.css?v=20260924-home1" />
 </head>
 <body>
   <header class="site-header" data-header>
@@ -125,14 +126,225 @@
       </div>
     </section>
 
-    <section class="b2b-band" id="empresas" aria-label="Servicios para empresas y gestores de inmuebles">
-      <div>
-        <span>PARA EMPRESAS Y GESTORES DE INMUEBLES</span>
-        <strong>¿Gestionas pisos, alquileres o incidencias?</strong>
-        <p>Descubre nuestra línea para inmobiliarias, property managers y propietarios con cartera.</p>
+    <section class="service-gateway section-shell" aria-labelledby="gateway-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">¿QUÉ NECESITAS RESOLVER?</p>
+        <h2 id="gateway-title">Mudanzas, portes y vaciados en Barcelona <span>sin coordinar cuatro proveedores.</span></h2>
+        <p>Empieza por el servicio que necesitas hoy. Si después hay que desmontar, retirar, pintar o dejar el inmueble preparado, seguimos contigo.</p>
       </div>
-      <a class="btn btn-business" href="#empresas">Ver soluciones para empresas <span aria-hidden="true">→</span></a>
+
+      <div class="visual-card-grid visual-card-grid-3">
+        <a class="visual-card visual-card-tall reveal" id="mudanzas" href="#como-funciona" style="--card-bg:url('https://images.pexels.com/photos/7464232/pexels-photo-7464232.jpeg?auto=compress&cs=tinysrgb&w=1400')">
+          <span class="visual-card-tag">SERVICIO PRINCIPAL</span>
+          <div class="visual-card-copy">
+            <h3>Mudanzas</h3>
+            <p>Viviendas, cambios completos y traslados con desmontaje, protección y seguimiento.</p>
+            <span class="card-link">Ver cómo trabajamos →</span>
+          </div>
+        </a>
+
+        <a class="visual-card visual-card-tall reveal" id="portes" href="#servicios" style="--card-bg:url('https://images.pexels.com/photos/7464709/pexels-photo-7464709.jpeg?auto=compress&cs=tinysrgb&w=1400')">
+          <span class="visual-card-tag">RÁPIDO Y FLEXIBLE</span>
+          <div class="visual-card-copy">
+            <h3>Portes y mini mudanzas</h3>
+            <p>Un sofá, varias cajas o media vivienda. Ajustamos equipo y vehículo al volumen real.</p>
+            <span class="card-link">Ver opciones →</span>
+          </div>
+        </a>
+
+        <a class="visual-card visual-card-tall reveal" id="vaciados" href="#servicios" style="--card-bg:url('https://images.pexels.com/photos/3434533/pexels-photo-3434533.jpeg?auto=compress&cs=tinysrgb&w=1400')">
+          <span class="visual-card-tag">INMUEBLE DESPEJADO</span>
+          <div class="visual-card-copy">
+            <h3>Vaciados y retirada</h3>
+            <p>Retirada de mobiliario y enseres para dejar el espacio preparado para su siguiente uso.</p>
+            <span class="card-link">Ver servicio →</span>
+          </div>
+        </a>
+      </div>
     </section>
+
+    <section class="process-section section-shell" id="como-funciona" aria-labelledby="process-title">
+      <div class="process-layout">
+        <div class="process-photo reveal" aria-hidden="true">
+          <img src="https://images.pexels.com/photos/7464244/pexels-photo-7464244.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="" loading="lazy">
+          <div class="process-photo-badge"><strong>Un contacto.</strong><span>Todo el seguimiento.</span></div>
+        </div>
+
+        <div class="process-copy">
+          <div class="section-heading section-heading-left reveal">
+            <p class="section-kicker">CÓMO FUNCIONA</p>
+            <h2 id="process-title">Tu mudanza clara <span>desde el primer minuto.</span></h2>
+            <p>Menos llamadas, menos incertidumbre y un proceso que puedes entender antes de contratar.</p>
+          </div>
+
+          <ol class="process-steps">
+            <li class="reveal"><span>01</span><div><strong>Cuéntanos qué tienes que mover</strong><p>Ruta, volumen, plantas, ascensor y fecha aproximada.</p></div></li>
+            <li class="reveal"><span>02</span><div><strong>Calculamos una primera orientación</strong><p>La calculadora te ayuda a situarte sin esperar una visita.</p></div></li>
+            <li class="reveal"><span>03</span><div><strong>Revisamos los detalles</strong><p>Cuando haga falta, afinamos con fotos, vídeo o valoración del acceso.</p></div></li>
+            <li class="reveal"><span>04</span><div><strong>Ejecutamos y hacemos seguimiento</strong><p>Un interlocutor desde la preparación hasta la entrega.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator-story section-shell" aria-labelledby="calculator-story-title">
+      <div class="calculator-story-copy reveal">
+        <p class="section-kicker">PRECIO SIN HUMO</p>
+        <h2 id="calculator-story-title">¿Cuánto puede costar tu mudanza?</h2>
+        <p>El precio depende sobre todo del volumen, los accesos, la ruta y los servicios adicionales. Empieza con una orientación y después validamos lo que realmente necesitas.</p>
+        <div class="calculator-factors" aria-label="Factores que influyen en el precio">
+          <span>Volumen</span><span>Ascensor y plantas</span><span>Distancia</span><span>Montaje y extras</span>
+        </div>
+        <button class="btn btn-accent" type="button" data-open-calculator>Calcular mi mudanza <span aria-hidden="true">→</span></button>
+      </div>
+      <button class="calculator-story-visual reveal" type="button" data-open-calculator aria-label="Abrir calculadora de mudanza">
+        <img src="./assets/calcula-tu-mudanza.webp?v=approved1" alt="Calculadora Movipiso para obtener una estimación inicial de mudanza" loading="lazy">
+      </button>
+    </section>
+
+    <section class="services-section section-shell" id="servicios" aria-labelledby="services-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">UN SOLO EQUIPO</p>
+        <h2 id="services-title">Servicios para mover, vaciar y <span>dejar un inmueble listo.</span></h2>
+        <p>La mudanza es el centro. Alrededor añadimos solo los servicios que evitan que tengas que coordinar más proveedores.</p>
+      </div>
+
+      <div class="service-mosaic">
+        <article class="visual-card service-card service-card-wide reveal" style="--card-bg:url('https://images.pexels.com/photos/7464687/pexels-photo-7464687.jpeg?auto=compress&cs=tinysrgb&w=1500')">
+          <span class="visual-card-tag">MUDANZA COMPLETA</span>
+          <div class="visual-card-copy"><h3>De vivienda a vivienda</h3><p>Protección, transporte, desmontaje y montaje según necesidad.</p></div>
+        </article>
+        <article class="visual-card service-card reveal" style="--card-bg:url('https://images.pexels.com/photos/7464492/pexels-photo-7464492.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+          <span class="visual-card-tag">PEQUEÑOS VOLÚMENES</span>
+          <div class="visual-card-copy"><h3>Portes</h3><p>Lo justo para mover lo necesario sin sobredimensionar el servicio.</p></div>
+        </article>
+        <article class="visual-card service-card reveal" style="--card-bg:url('https://images.pexels.com/photos/4246119/pexels-photo-4246119.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+          <span class="visual-card-tag">RETIRADA</span>
+          <div class="visual-card-copy"><h3>Vaciados</h3><p>Mobiliario y enseres fuera para recuperar el espacio.</p></div>
+        </article>
+        <article class="visual-card service-card reveal" style="--card-bg:url('https://images.pexels.com/photos/7218587/pexels-photo-7218587.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+          <span class="visual-card-tag">EMPRESA</span>
+          <div class="visual-card-copy"><h3>Oficinas y B2B</h3><p>Traslados y operativa para empresas, gestores e inmobiliarias.</p></div>
+        </article>
+        <article class="visual-card service-card service-card-wide reveal" id="reformas" style="--card-bg:url('https://images.pexels.com/photos/6474346/pexels-photo-6474346.jpeg?auto=compress&cs=tinysrgb&w=1500')">
+          <span class="visual-card-tag">PUESTA A PUNTO</span>
+          <div class="visual-card-copy"><h3>Reparaciones, pintura y preparación</h3><p>Cuando el traslado es solo una parte del problema, coordinamos la puesta a punto necesaria.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="price-section section-shell" id="precios" aria-labelledby="price-title">
+      <div class="section-heading section-heading-left reveal">
+        <p class="section-kicker">PRECIO TRANSPARENTE</p>
+        <h2 id="price-title">No todos los pisos cuestan lo mismo. <span>Y preferimos explicarte por qué.</span></h2>
+        <p>No publicamos una cifra inventada para atraer el clic. La orientación sale de los factores que realmente cambian una mudanza y se revisa antes de confirmar el servicio.</p>
+      </div>
+      <div class="price-grid">
+        <article class="price-card reveal"><span>01</span><h3>Volumen real</h3><p>No es lo mismo mover diez cajas que una vivienda completa.</p></article>
+        <article class="price-card reveal"><span>02</span><h3>Accesos</h3><p>Planta, ascensor, distancia al vehículo y piezas especiales importan.</p></article>
+        <article class="price-card reveal"><span>03</span><h3>Ruta y extras</h3><p>Distancia, montaje, embalaje y retirada completan la estimación.</p></article>
+      </div>
+      <div class="price-cta reveal">
+        <div><strong>Empieza con una orientación en 1 minuto.</strong><span>Sin compromiso y sin inventarnos un precio cerrado sin datos.</span></div>
+        <button class="btn btn-accent" type="button" data-open-calculator>Calcular ahora →</button>
+      </div>
+    </section>
+
+    <section class="situations-section section-shell" aria-labelledby="situations-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">CASOS QUE RESOLVEMOS</p>
+        <h2 id="situations-title">No siempre necesitas “una mudanza”. <span>A veces necesitas resolver una situación.</span></h2>
+      </div>
+      <div class="visual-card-grid visual-card-grid-3">
+        <article class="visual-card situation-card reveal" style="--card-bg:url('https://images.pexels.com/photos/7647206/pexels-photo-7647206.jpeg?auto=compress&cs=tinysrgb&w=1200')"><div class="visual-card-copy"><h3>Cambio de vivienda</h3><p>Organizar, mover y volver a montar sin convertir el cambio en una semana de caos.</p></div></article>
+        <article class="visual-card situation-card reveal" style="--card-bg:url('https://images.pexels.com/photos/31015267/pexels-photo-31015267.jpeg?auto=compress&cs=tinysrgb&w=1200')"><div class="visual-card-copy"><h3>Cambio de inquilino</h3><p>Retirada, pequeñas reparaciones y preparación para volver a entregar las llaves.</p></div></article>
+        <article class="visual-card situation-card reveal" style="--card-bg:url('https://images.pexels.com/photos/7218515/pexels-photo-7218515.jpeg?auto=compress&cs=tinysrgb&w=1200')"><div class="visual-card-copy"><h3>Traslado de oficina</h3><p>Logística y coordinación para mover actividad, mobiliario y equipos con orden.</p></div></article>
+      </div>
+    </section>
+
+    <section class="why-section section-shell" aria-labelledby="why-title">
+      <div class="why-layout">
+        <div class="section-heading section-heading-left reveal">
+          <p class="section-kicker">POR QUÉ MOVIPISO</p>
+          <h2 id="why-title">Lo difícil no es mover cajas. <span>Es que todo salga como te han dicho.</span></h2>
+          <p>Por eso el sistema se apoya en cuatro cosas muy simples: claridad, contacto directo, seguimiento y capacidad de resolver más de una parte del trabajo.</p>
+        </div>
+        <div class="why-points">
+          <div class="why-point reveal"><strong>Presupuesto entendible</strong><span>Qué hacemos, qué condiciona el precio y qué queda pendiente de validar.</span></div>
+          <div class="why-point reveal"><strong>Un interlocutor</strong><span>No tienes que perseguir a cada persona que interviene en el servicio.</span></div>
+          <div class="why-point reveal"><strong>Seguimiento</strong><span>Desde la preparación hasta la entrega final del inmueble o los muebles.</span></div>
+          <div class="why-point reveal"><strong>Barcelona y provincia</strong><span>Con foco inicial en ciudad, área metropolitana y principales municipios.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="b2b-feature section-shell" id="empresas" aria-labelledby="b2b-title">
+      <div class="b2b-feature-bg" aria-hidden="true"></div>
+      <div class="b2b-feature-copy reveal">
+        <p class="section-kicker section-kicker-light">PARA EMPRESAS Y GESTORES</p>
+        <h2 id="b2b-title">Tú gestionas propiedades. <span>Nosotros gestionamos todo lo que les pasa.</span></h2>
+        <p>Una incidencia, un seguimiento y un único interlocutor para inmobiliarias, property managers, administradores, propietarios con cartera, oficinas y retail.</p>
+        <div class="b2b-mini">
+          <span>Mudanzas</span><span>Vaciados</span><span>Puesta a punto</span><span>Traslados</span>
+        </div>
+        <a class="btn btn-blue-light" href="#piso-listo">Ver solución para empresas →</a>
+      </div>
+    </section>
+
+    <section class="piso-listo section-shell" id="piso-listo" aria-labelledby="piso-title">
+      <div class="piso-listo-photo reveal">
+        <img src="https://images.pexels.com/photos/31015267/pexels-photo-31015267.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Entrega de llaves de un inmueble" loading="lazy">
+      </div>
+      <div class="piso-listo-copy reveal">
+        <p class="section-kicker">PISO LISTO · B2B</p>
+        <h2 id="piso-title">“Te doy la llave y me devuelves <span>el piso listo.”</span></h2>
+        <p>Un servicio pensado para rotación de vivienda: revisar, retirar, mover, coordinar pequeñas reparaciones y preparar el inmueble para su siguiente uso.</p>
+        <div class="piso-flow" aria-label="Proceso Piso Listo">
+          <span>Llaves</span><i>→</i><span>Revisión</span><i>→</i><span>Retirada</span><i>→</i><span>Puesta a punto</span><i>→</i><span>Entrega</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="zones-section section-shell" id="zonas" aria-labelledby="zones-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">SEO LOCAL · COBERTURA</p>
+        <h2 id="zones-title">Empezamos por Barcelona y <span>crecemos donde tenga sentido.</span></h2>
+        <p>Las páginas locales tendrán contenido propio: accesos, barrios, preguntas, casos y rutas. Nada de clonar una página cambiando solo el municipio.</p>
+      </div>
+      <div class="zone-grid reveal">
+        <a href="#zonas">Barcelona ciudad</a>
+        <a href="#zonas">L’Hospitalet</a>
+        <a href="#zonas">Badalona</a>
+        <a href="#zonas">Sabadell</a>
+        <a href="#zonas">Terrassa</a>
+        <span>Después: Sant Cugat · Cornellà · Sant Boi · Viladecans · Castelldefels · Gavà · Maresme</span>
+      </div>
+    </section>
+
+    <section class="faq-section section-shell" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading section-heading-left reveal">
+        <p class="section-kicker">DUDAS QUE CAMBIAN UNA MUDANZA</p>
+        <h2 id="faq-title">Preguntas frecuentes antes de pedir presupuesto</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal"><summary>¿Cuánto cuesta una mudanza en Barcelona?</summary><p>Depende del volumen, los accesos, la distancia y los servicios adicionales. Por eso empezamos con una estimación y revisamos la información antes de confirmar un precio.</p></details>
+        <details class="faq-item reveal"><summary>¿El ascensor o la planta cambian el precio?</summary><p>Sí. El tiempo de carga y descarga puede variar mucho según plantas, ascensor, escaleras, distancia hasta el vehículo y tamaño de las piezas.</p></details>
+        <details class="faq-item reveal"><summary>¿Podéis desmontar y volver a montar muebles?</summary><p>Sí, cuando el servicio lo necesita podemos incluir desmontaje y montaje. Conviene indicarlo en la valoración para dimensionar tiempo y equipo.</p></details>
+        <details class="faq-item reveal"><summary>¿Qué pasa si el acceso es complicado?</summary><p>Lo revisamos antes de cerrar el servicio. Calles estrechas, zonas peatonales, escaleras difíciles o piezas grandes pueden requerir planificación adicional.</p></details>
+        <details class="faq-item reveal"><summary>¿Hacéis portes pequeños y recogidas de muebles?</summary><p>Sí. No necesitas contratar una mudanza completa si solo tienes que mover algunos muebles, cajas o una compra concreta.</p></details>
+        <details class="faq-item reveal"><summary>¿Trabajáis con inmobiliarias y empresas?</summary><p>Sí. La línea B2B está pensada para traslados, vaciados, cambios de inquilino y coordinación operativa de inmuebles con un solo interlocutor.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta section-shell reveal" aria-labelledby="final-title">
+      <div>
+        <p class="section-kicker section-kicker-light">MOVIPISO · BARCELONA Y PROVINCIA</p>
+        <h2 id="final-title">Cuéntanos qué hay que mover. <span>Nosotros ponemos orden al resto.</span></h2>
+        <p>Empieza con la calculadora y obtén una primera orientación del servicio.</p>
+      </div>
+      <button class="btn btn-accent" type="button" data-open-calculator>Calcular mi mudanza →</button>
+    </section>
+
   </main>
 
   <div class="modal-backdrop" data-modal-backdrop hidden></div>
