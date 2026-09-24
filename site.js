@@ -161,7 +161,7 @@ wa.className="wa-float";
 wa.setAttribute("aria-label","Contacto por WhatsApp");
 const pageLabel=document.querySelector("h1")?.textContent?.replace(/\s+/g," ").trim()||"Movipiso";
 const msg=encodeURIComponent("Hola Jordi, quiero información sobre "+pageLabel+".");
-wa.innerHTML='<button class="wa-close" type="button" aria-label="Minimizar WhatsApp">×</button><a class="wa-link" href="https://wa.me/34633881774?text='+msg+'" target="_blank" rel="noopener"><span class="wa-icon" aria-hidden="true">●</span><span class="wa-copy"><strong>Contacta con Jordi</strong><small>Te respondemos en menos de 15 min</small><b>WhatsApp · 633 881 774</b></span></a>';
+wa.innerHTML='<button class="wa-close" type="button" aria-label="Minimizar WhatsApp">×</button><a class="wa-link" href="https://wa.me/34633881774?text='+msg+'" target="_blank" rel="noopener"><span class="wa-icon" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M16 5.2A10.6 10.6 0 0 0 7 21.4L5.4 27l5.8-1.5A10.6 10.6 0 1 0 16 5.2Z"/><path d="M12.1 10.6c.3-.7.6-.7 1-.7h.5c.2 0 .4 0 .5.4l1 2.4c.1.3.1.5-.1.8l-.8 1c-.2.2-.3.4-.1.7.6 1.2 1.5 2.2 2.7 3 .3.2.6.1.8-.1l1-1.2c.2-.3.5-.3.8-.2l2.2 1c.3.1.5.2.5.5 0 .2-.1 1.5-.8 2.2-.6.7-1.5 1.1-2.6 1-1.4-.1-3.2-.8-5-2.3-2.1-1.8-3.4-4-3.8-5.4-.4-1.4.1-2.5.5-3.1.4-.5.8-.8 1.2-.9.2 0 .3-.1.5-.1Z"/></svg></span><span class="wa-copy"><strong>Contacta con Jordi</strong><small>Te respondemos en menos de 15 min</small><b>WhatsApp · 633 881 774</b></span></a>';
 document.body.append(wa);
 const close=wa.querySelector(".wa-close");
 close.addEventListener("click",()=>{wa.classList.add("is-minimized");localStorage.setItem("movipiso-wa-min","1")});
