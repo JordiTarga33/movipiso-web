@@ -157,3 +157,16 @@
 .wa-icon svg{width:27px;height:27px;display:block}
 .wa-icon svg path:first-child{fill:none;stroke:#fff;stroke-width:1.8;stroke-linejoin:round}
 .wa-icon svg path:last-child{fill:#fff}
+
+/* COVERAGE MAP V8 */
+.coverage-map-section{padding:82px 0;background:linear-gradient(180deg,#071b34,#0b315f);color:#fff}
+.coverage-map-section .section-head h2{color:#fff}
+.coverage-map-section .section-head h2 span{color:#76b4ff}
+.coverage-map-section .section-head p:last-child{color:#cfe0f1}
+.coverage-map-wrap{position:relative}
+#coverage-map{height:560px;border-radius:28px;overflow:hidden;box-shadow:0 26px 70px rgba(0,0,0,.24);border:1px solid rgba(255,255,255,.16)}
+.coverage-legend{position:absolute;z-index:500;left:18px;bottom:18px;display:flex;gap:9px;flex-wrap:wrap;padding:10px 12px;border-radius:14px;background:rgba(7,27,52,.90);backdrop-filter:blur(10px);color:#fff;font-size:11px;font-weight:800}
+.coverage-legend span{display:flex;align-items:center;gap:6px}.legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}.legend-dot.primary{background:#8fdb2e}.legend-dot.secondary{background:#2f80ff}
+.coverage-marker{background:transparent!important;border:0!important}.coverage-marker span{display:block;width:18px;height:18px;border-radius:50%;border:3px solid #fff;box-shadow:0 5px 13px rgba(0,0,0,.28)}
+.leaflet-tooltip{font-family:Inter,system-ui,sans-serif;font-weight:800;border:0!important;border-radius:9px!important;box-shadow:0 8px 20px rgba(7,31,63,.15)!important}
+@media(max-width:640px){#coverage-map{height:430px;border-radius:22px}.coverage-map-section{padding:62px 0}.coverage-legend{position:static;margin-top:10px;background:#0a284d}}
