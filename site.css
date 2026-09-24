@@ -40,3 +40,6 @@
 .article-faq-list details{background:#fff}
 .article-faq-list summary{font-size:16px}
 .article-faq-list p{margin:-4px 0 20px;color:var(--muted);font-size:14px;line-height:1.65}
+
+/* SEO COPY V4 */
+.seo-copy-v4{padding-top:64px;padding-bottom:64px}.seo-copy-v4 .section-head{max-width:900px}.seo-copy-v4 .section-head p{font-size:16px;line-height:1.75}.seo-copy-v4 .section-head p+p{margin-top:14px}.seo-links-v4{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.seo-links-v4 a{padding:10px 13px;border-radius:999px;background:#edf5ff;border:1px solid #cfe0f4;color:#155fae;text-decoration:none;font-size:12px;font-weight:850}.seo-links-v4 a:hover{background:#dfeeff}@media(max-width:640px){.seo-copy-v4{padding-top:48px;padding-bottom:48px}.seo-copy-v4 .section-head p{font-size:15px}.seo-links-v4{display:grid;grid-template-columns:1fr}.seo-links-v4 a{text-align:center}}
