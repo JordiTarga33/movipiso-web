@@ -1,0 +1,1 @@
+(()=>{let b=document.querySelector("[data-nav-toggle]"),m=document.querySelector("[data-mobile-nav]");if(b&&m)b.onclick=()=>m.hidden=!m.hidden;document.querySelectorAll("details").forEach(d=>d.ontoggle=()=>{if(d.open)document.querySelectorAll("details").forEach(x=>{if(x!==d)x.open=false})})})();
