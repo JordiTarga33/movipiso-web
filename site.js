@@ -32,13 +32,20 @@ const mobileNav=`
 document.querySelectorAll(".desktop-nav,.global-header nav").forEach(n=>n.innerHTML=desktopNav);
 document.querySelectorAll(".mobile-nav,.mobile-menu").forEach(n=>n.innerHTML=mobileNav);
 
-const toggle=document.querySelector("[data-nav-toggle],[data-menu-toggle]");
-const mobile=document.querySelector(".mobile-nav,.mobile-menu");
-if(toggle&&mobile){
-  toggle.addEventListener("click",()=>{
-    mobile.hidden=!mobile.hidden;
-    toggle.setAttribute("aria-expanded",String(!mobile.hidden));
+const subpageToggle=document.querySelector("[data-nav-toggle]");
+const subpageMobile=document.querySelector(".mobile-nav");
+if(subpageToggle&&subpageMobile){
+  subpageToggle.addEventListener("click",()=>{
+    const willOpen=subpageMobile.hidden;
+    subpageMobile.hidden=!willOpen;
+    subpageToggle.setAttribute("aria-expanded",String(willOpen));
+    document.body.classList.toggle("mobile-nav-open",willOpen);
   });
+  subpageMobile.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
+    subpageMobile.hidden=true;
+    subpageToggle.setAttribute("aria-expanded","false");
+    document.body.classList.remove("mobile-nav-open");
+  }));
 }
 
 document.querySelectorAll(".faq-list details").forEach(d=>d.addEventListener("toggle",()=>{
