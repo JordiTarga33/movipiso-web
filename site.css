@@ -43,3 +43,112 @@
 
 /* SEO COPY V4 */
 .seo-copy-v4{padding-top:64px;padding-bottom:64px}.seo-copy-v4 .section-head{max-width:900px}.seo-copy-v4 .section-head p{font-size:16px;line-height:1.75}.seo-copy-v4 .section-head p+p{margin-top:14px}.seo-links-v4{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.seo-links-v4 a{padding:10px 13px;border-radius:999px;background:#edf5ff;border:1px solid #cfe0f4;color:#155fae;text-decoration:none;font-size:12px;font-weight:850}.seo-links-v4 a:hover{background:#dfeeff}@media(max-width:640px){.seo-copy-v4{padding-top:48px;padding-bottom:48px}.seo-copy-v4 .section-head p{font-size:15px}.seo-links-v4{display:grid;grid-template-columns:1fr}.seo-links-v4 a{text-align:center}}
+
+
+/* MOVIPISO V6 · robustez, contacto y WhatsApp */
+.page-hero .btn-ghost,
+.hero-actions .btn-ghost{
+  background:#fff !important;
+  color:#071b34 !important;
+  border:1px solid rgba(7,27,52,.12) !important;
+  box-shadow:0 10px 24px rgba(7,27,52,.10) !important;
+}
+.page-hero .btn-ghost:hover,
+.hero-actions .btn-ghost:hover{
+  background:#f2f7fc !important;
+  color:#071b34 !important;
+}
+
+/* El contenido nunca queda invisible si JS falla */
+.reveal-v3{opacity:1 !important;transform:none !important}
+.js-ready .reveal-v3{opacity:0 !important;transform:translateY(20px) !important;transition:opacity .55s ease,transform .55s ease !important}
+.js-ready .reveal-v3.is-visible{opacity:1 !important;transform:none !important}
+
+.wa-float{
+  position:fixed;
+  z-index:140;
+  right:18px;
+  bottom:18px;
+  width:min(330px,calc(100vw - 28px));
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:22px;
+  background:linear-gradient(135deg,#082444,#0a3768);
+  box-shadow:0 22px 55px rgba(4,23,45,.28);
+  color:#fff;
+  transition:opacity .25s ease,transform .25s ease,width .25s ease,border-radius .25s ease;
+}
+.wa-float.is-hidden-by-hero{
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(16px);
+}
+.wa-link{
+  min-height:92px;
+  padding:18px 42px 18px 18px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  color:#fff;
+  text-decoration:none;
+}
+.wa-icon{
+  flex:0 0 48px;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#25D366;
+  color:#fff;
+  font-size:0;
+  box-shadow:0 9px 20px rgba(37,211,102,.30);
+}
+.wa-icon:before{
+  content:"☎";
+  font-size:22px;
+  line-height:1;
+  transform:rotate(-18deg);
+}
+.wa-copy{display:block;min-width:0}
+.wa-copy strong,.wa-copy small,.wa-copy b{display:block}
+.wa-copy strong{font-size:16px;line-height:1.15}
+.wa-copy small{margin-top:4px;color:#d8e8f7;font-size:12px}
+.wa-copy b{margin-top:7px;color:#bdf77a;font-size:11px;letter-spacing:.02em}
+.wa-close{
+  position:absolute;
+  top:8px;
+  right:8px;
+  width:28px;
+  height:28px;
+  display:grid;
+  place-items:center;
+  border:0;
+  border-radius:50%;
+  background:rgba(255,255,255,.10);
+  color:#fff;
+  font-size:18px;
+  line-height:1;
+}
+.wa-float.is-minimized{
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+}
+.wa-float.is-minimized .wa-link{min-height:62px;padding:7px}
+.wa-float.is-minimized .wa-icon{width:48px;height:48px;flex-basis:48px}
+.wa-float.is-minimized .wa-copy,
+.wa-float.is-minimized .wa-close{display:none}
+
+@media(max-width:640px){
+  .wa-float{right:10px;bottom:10px;width:min(310px,calc(100vw - 20px));border-radius:19px}
+  .wa-link{min-height:84px;padding:14px 38px 14px 14px}
+  .wa-icon{width:44px;height:44px;flex-basis:44px}
+  .wa-copy strong{font-size:15px}
+  .wa-copy small{font-size:11px}
+  .wa-float.is-minimized{width:58px;height:58px}
+  .wa-float.is-minimized .wa-link{min-height:58px;padding:7px}
+  .wa-float.is-minimized .wa-icon{width:44px;height:44px;flex-basis:44px}
+}
