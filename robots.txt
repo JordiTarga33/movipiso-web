@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jorditarga33.github.io/movipiso-web/sitemap.xml

@@ -1,0 +1,4 @@
+# Imágenes del blog
+
+Todas las imágenes principales son distintas y se muestran con ratio CSS 16:9. Fuente: Pexels. IDs usados:
+4246089, 5025512, 4246087, 4246099, 4246093, 7414926, 7414921, 7464737, 7489125, 8962877, 6347554, 7464466, 7203820, 6407553, 4246097, 4246115, 7203788, 5691597, 31015267, 7218515.
