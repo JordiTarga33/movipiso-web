@@ -14,4 +14,4 @@ Barcelona ciudad.
 No crear páginas de barrio clonadas. Abrir URL solo cuando exista contenido útil y distinto.
 
 ## Estado
-Toda la preview mantiene noindex hasta validación final.
+Las páginas públicas están habilitadas para indexación con canónica propia. Las páginas legales incompletas permanecen en `noindex` y fuera del sitemap.

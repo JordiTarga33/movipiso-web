@@ -51,4 +51,4 @@ movipiso.com
 - Reseñas reales conectadas a Google Business.
 - Política de privacidad + tratamiento de leads.
 - Integración CRM/formulario.
-- Quitar `noindex` solo cuando la web esté lista para indexar.
+- Indexación habilitada en las páginas públicas; las páginas legales incompletas permanecen en `noindex` y fuera del sitemap.
